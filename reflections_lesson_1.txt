@@ -1,0 +1,78 @@
+It helped us to see what the eact diff was between
+the current and previous versions
+
+Having history saved helps us in keeping track of changes without having to remember every change.
+
+Git commits :
+
+Pros : 
+1. Logical follow through with every commit
+2. Avoid having too many versions.
+3. Full control on when to commit
+
+Cons :
+1. Work may be lost if not saved periodically
+2. Always need to remember to commit.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+Git logically ties all the files into one bundle and keeps track of it.
+Also, the files may be interconnected and hence a single commit helps us to logically undo the change that was done.
+
+How can you use the commands git log and git diff to view the history of files?
+
+git log is used to see all the historical commits.Each commit has a commit id, time of commit.
+git diff is used to see the difference between 2 files using commit ids.
+Each addition / deletion is marked by color codings.
+
+Alternatively, we can use git log --stat and search for a specific change message.
+This gives the total additions and deletions.
+
+How might using version control make you more confident to make changes that could break something?
+
+You can always revert back to the older versions without any issues.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+Clone and play around wiht some packages
+
+WHAT HAPPENS WHEN YOU INITIALIZE A REPOSITORY? WHY DO YOU NEED TO DO IT?
+
+When you initialize a repository, there are 0 commits and a .git file gets added to the directory where files are present.
+git status command gives us the status of files on the repository.
+
+HOW IS THE STAGING AREA DIFFERENT FROM THE WORKING DIRECTORY AND THE REPOSITORY? WHAT VALUE DO YOU THINK IT OFFERS?
+
+Staging area lets us add only the selected files that we need. Sometimes there could be a case of commiting only a few files instead of all files.
+Staging area helps us in only adding a few needed files and commiting them.
+
+Working directory has all the files that we have created ever.
+Repository contains all the commited files.
+
+COMPARING WORKING AND STAGING AREAS :
+
+git diff
+
+COMPARING STAGING AND REPOSITORY
+
+git diff --staged
+
+COMPARING TWO COMMITS 
+
+git diff commit1 commit2
+
+HOW CAN YOU USE THE STAGING AREA TO MAKE SURE YOU HAVE ONE COMMIT PER LOGICAL CHANGE?
+
+Add files to staging area after modification, compare them with those in the repository by doing git diff --staged.
+Once confirmed, do a commit
+
+WHAT ARE SOME SITUATIONS WHEN BRANCHES WOULD BE HELPFUL IN KEEPING YOUR HISTORY ORGANIZED? HOW WOULD BRANCHES HELP?
+
+Branches would be helpful in doing experimental stuff without affecting the main set of code.
+Versions can be merged later when needed.
+
+HOW DO THE DIAGRAMS HELP YOU VISUALIZE THE BRANCH STRUCTURE?
+
+WHAT IS THE RESULT OF MERGING TWO BRANCHES TOGETHER? WHY DO WE REPRESENT IT IN THE DIAGRAM THE WAY WE DO?
+
+Merge will combine files from both branches and create a new commit
