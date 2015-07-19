@@ -1,3 +1,20 @@
-When would you want to use a remote repository rather than keeping all your work local?
+WHEN WOULD YOU WANT TO USE A REMOTE REPOSITORY RATHER THAN KEEPING ALL YOUR WORK LOCAL?
 
 When there are multiple people working on the same file.
+
+WHY MIGHT YOU WANT TO ALWAYS PULL CHANGES MANUALLY RATHER THAN HAVING GIT AUTOMATICALLY STAY UP-TO-DATE WITH YOUR REMOTE REPOSITORY?
+
+There could be cases of rollbacks to previous versions before releasing the master branch to other users.
+
+
+DESCRIBE THE DIFFERENCES BETWEEN FORKS, CLONES, AND BRANCHES. WHEN WOULD YOU USE ONE INSTEAD OF ANOTHER?
+
+forks are used when you want to work on someone elses code but donot have access.
+Also you can collaborate with other people on your forked repository and they can push their changes into the github repository directly.
+
+Clone - Cloning is done when you want to make a local copy from the repository. 
+Collaboration is not possible as you will be able to work on it alone.
+
+Branch - This is created when you want to test some additional features but donot want to touch the working master version.
+You can merge your changes later into the main version.
+Collaboration is not possible.
